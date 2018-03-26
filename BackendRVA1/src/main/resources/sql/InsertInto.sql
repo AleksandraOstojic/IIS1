@@ -50,6 +50,10 @@ VALUES (nextval('porudzbina_seq'), to_date('11.02.2017.', 'dd.mm.yyyy.'), 4, to_
 INSERT INTO "porudzbina"("id", "datum", "dobavljac", "isporuceno", "iznos", "placeno")
 VALUES (nextval('porudzbina_seq'), to_date('01.03.2017.', 'dd.mm.yyyy.'), 4, to_date('03.03.2017.', 'dd.mm.yyyy.'), 0, false);
 
+INSERT INTO "porudzbina"("id", "datum", "dobavljac", "isporuceno", "iznos", "placeno")
+VALUES (-100, to_date('01.03.2017.', 'dd.mm.yyyy.'), 4, to_date('03.03.2017.', 'dd.mm.yyyy.'), 0, false);
+
+
 INSERT INTO "stavka_porudzbine"("id", "porudzbina", "redni_broj", "artikl", "kolicina", "jedinica_mere", "cena")
 VALUES (nextval('stavka_porudzbine_seq'), 1, 1, 1, 20, 'komad', 100);
 INSERT INTO "stavka_porudzbine"("id", "porudzbina", "redni_broj", "artikl", "kolicina", "jedinica_mere", "cena")
